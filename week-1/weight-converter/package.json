@@ -4,7 +4,9 @@
     "description": "A simple weight converter",
     "main": "weight-converter.js",
     "scripts": {
-      "start": "node weight-converter.js"
+        "start": "node weight-converter.js"
     },
-    "dependencies": {}
-  }
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
