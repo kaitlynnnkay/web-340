@@ -1,5 +1,5 @@
 {
-  "name": "taco-stand-app",
+  "name": "account-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "test": "node test/taco-stand.spec.js"
+    "start": "node src/bank-account.js",
+    "test": "node test/bank-account-spec.js"
   },
   "keywords": [],
   "author": "",
