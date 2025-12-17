@@ -18,8 +18,7 @@ function bakePie(pieType, ingredients) {
     // if an essentialIngredient was not passed to the function, stop the loop then print and return an error message
     if (!ingredients.includes(currentIngredient)) {
       let failedMessage = `${pieType} was not baked due to missing ${currentIngredient}.`;
-      console.error(failedMessage); // print error message
-      process.exit(1) // exit
+      console.log(failedMessage); // print error message
       return failedMessage; // return error message
     }
   }

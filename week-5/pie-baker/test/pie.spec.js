@@ -18,7 +18,7 @@ test("bake a pumpkin pie successfully with all essential ingredients", () => {
 
 test("bake a cherry pie successfully with all essential ingredients", () => {
     const result = bakePie("Cherry Pie", ["cherries", "sugar", "butter", "flour"])
-    expect(result).toBe("Cherry Pie was not baked due to missing flour.");
+    expect(result).toBe("Cherry Pie was successfully baked. Let's eat!");
 });
 
 test("unsuccessfully bake a pecan pie because sugar is missing", () => {
