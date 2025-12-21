@@ -10,13 +10,33 @@ describe("GameCharacters", () => {
 
   test("should return game characters data", (done) => {
     // TODO: Implement this test
+    gameCharacters.getCharacters((data, error) => {
+      expect(error).toBeNull();
+      expect(data).toEqual([
+        { class: "Warrior", gender: "Female", fact: "Preferred weapon is an axe." },
+        { class: "Mage", gender: "Female", fact: "Ironically, hates magic." },
+      ]);
+      done();
+    });
   });
 
   test("should handle an error when the game characters data script is not found", (done) => {
     // TODO: Implement this test
+    const gameCharacters = new GameCharacters("nonexistent-script.js");
+    gameCharacters.getCharacters((data, error) => {
+      expect(data).toBeNull();
+      expect(error).not.toBeNull();
+      done();
+    });
   });
 
   test("should handle an error when the game characters data script fails", (done) => {
     // TODO: Implement this test
+    const gameCharacters = new GameCharacters("failing-script.js");
+    gameCharacters.getCharacters((data, error) => {
+      expect(data).toBeNull();
+      expect(error).not.toBeNull();
+      done();
+    });
   });
 });
